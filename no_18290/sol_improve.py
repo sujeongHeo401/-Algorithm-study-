@@ -10,8 +10,8 @@ def go(prev_x, prev_y, cnt, s):
         global ans
         if ans < s:
             ans = s
-            return
-    for x in range(n, start=prev_x):
+        return
+    for x in range(prev_x, n):
         for y in range(prev_y if x == prev_x else 0,m):
             if c[x][y]:
                 continue
@@ -24,7 +24,7 @@ def go(prev_x, prev_y, cnt, s):
                         ok = False
             if ok:
                 c[x][y] = True 
-                go(cnt+1, s + a[x][y])
+                go(x, y, cnt+1, s + a[x][y])
                 c[x][y] = False 
 
 
