@@ -8,8 +8,8 @@ class Solution:
             # if i in memo:
             #     return memo[i]
 
-            down_one= cost[i-1] + minimum_cost(i-1)
-            down_two= cost[i-2] + minimum_cost(i-2)
+            down_one = cost[i-1] + minimum_cost(i-1)
+            down_two = cost[i-2] + minimum_cost(i-2)
             return min(down_one, down_two)
         # memo = {}
         return minimum_cost(len(cost))
