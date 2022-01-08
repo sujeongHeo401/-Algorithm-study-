@@ -3,7 +3,6 @@ def sol()-> int:
     N, M, K = 5, 8, 3 # 숫 횟수, 연속 횟수
     arr = [2, 4, 5, 4, 6]
     ans = 0
-
     arr.sort()
     print("arr[-1]:", arr[-1])
     print("arr[-2]:", arr[-2])
