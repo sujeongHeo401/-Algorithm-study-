@@ -13,7 +13,7 @@ int go(int i, int j){
 
     int &ans = d[i][j];
     int sum = 0;
-    for (int k=i; k<-j; k++){
+    for (int k=i; k<=j; k++){
         sum += a[k];
     }
 
